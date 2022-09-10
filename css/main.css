@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
 a {
@@ -51,7 +52,7 @@ header {
   padding: 0.2rem 2.4rem;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 100;
   background-color: #fff;
 }
 
@@ -437,7 +438,7 @@ header {
   padding: 1.2rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 1rem;
 }
 
 .content-container ul li {
@@ -663,6 +664,7 @@ span {
   .activity-menu {
     position: relative;
     transition: all 1s linear;
+    width: 100%;
   }
 
   #activity-range {
@@ -735,7 +737,6 @@ span {
 @media only screen and (max-width: 920px) {
   .header-main {
     font-size: 1.8rem;
-
     text-align: left;
   }
 
@@ -763,7 +764,11 @@ span {
   footer {
     flex-direction: column;
     padding: 2.4rem 2.8rem;
-    align-items: center;
+    align-items: flex-start;
+  }
+
+  footer ul {
+    padding-left: 1.2rem;
   }
 
   .about-law-section {
